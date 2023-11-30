@@ -2,11 +2,11 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  a(href="http://localhost:3000/new") Write a message
   //- p #{chatLog}
   ul
     each entry in chatLog
       li 
         p #{entry.text} 
-        p #{entry.user} 
+        p from #{entry.user} 
         p #{entry.added} 
